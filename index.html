@@ -1,44 +1,227 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Site Under Maintenance</title>
-  <style>
-    body {
-      background-color: #f4f4f4;
-      color: #333;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
-    }
-
-    .gear {
-      font-size: 80px;
-      color: #555;
-      animation: spin 2s linear infinite;
-      display: inline-block;
-      margin-bottom: 20px;
-    }
-
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-
-    .message {
-      font-size: 24px;
-      font-weight: bold;
-    }
-  </style>
-  <!-- Font Awesome for gear icon -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sarthak Mehare</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;family=Noto+Serif+JP:wght@400;700&amp;family=Syncopate:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1a1a1a", // Deep black/charcoal for strong contrast
+                        "background-light": "#f5f5f5", // Off-white, paper-like
+                        "background-dark": "#121212", // Deep dark gray
+                        "accent-light": "#e0e0e0",
+                        "accent-dark": "#333333",
+                    },
+                    fontFamily: {
+                        display: ["'Syncopate'", "sans-serif"], // For large titles
+                        body: ["'Inter'", "sans-serif"], // For readable text
+                        japanese: ["'Noto Serif JP'", "serif"], // For vertical text aesthetic
+                    },
+                    borderRadius: {
+                        DEFAULT: "0px", // Sharp edges for brutalist feel
+                    },
+                    spacing: {
+                        '128': '32rem',
+                    }
+                },
+            },
+        };
+    </script>
+<style>
+        .vertical-text {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+        }html {
+            scroll-behavior: smooth;
+        }::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+    </style>
 </head>
-<body><br>
-  <br><br><br>
-  <div class="gear">
-    <i class="fas fa-cog"></i>
-  </div>
-  
-  <div class="message">Our site is currently under maintenance. Please check back soon.</div>
-</body>
-</html>
+<body class="bg-background-light dark:bg-background-dark text-gray-900 dark:text-gray-100 font-body transition-colors duration-300">
+<div class="fixed top-6 right-6 z-50">
+<button class="p-2 border border-gray-900 dark:border-gray-100 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors" onclick="document.documentElement.classList.toggle('dark')">
+<span class="material-icons-outlined text-sm">brightness_4</span>
+</button>
+</div>
+<main class="max-w-[1400px] mx-auto px-6 md:px-12 py-12 md:py-24">
+<section class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-32 border-b border-gray-300 dark:border-gray-800 pb-20">
+<div class="md:col-span-3 flex flex-col justify-between h-full text-xs font-mono  tracking-widest text-gray-500 dark:text-gray-400">
+<div>
+<p class="mb-2">sarthakmehare1111@gmail.com</p>
+<p>+91 8767489810</p>
+</div>
+<div class="mt-12 md:mt-0">
+<p>2023 — Present</p>
+</div>
+</div>
+<div class="md:col-span-3 relative flex flex-col items-center justify-center md:items-end md:pr-8">
+<div class="vertical-text font-japanese text-6xl md:text-10xl leading-tight text-gray-800 dark:text-gray-300 select-none opacity-80 mb-8 md:mb-0 md:absolute md:rigth-12 md:top-0 h-full">
+                    Sarthak Mehare
+                </div>
+</div>
+<div class="md:col-span-6 relative group cursor-pointer overflow-hidden">
+<div class="aspect-[3/4] md:aspect-[4/5] w-full bg-gray-200 dark:bg-gray-800 relative">
+<img alt="Portrait of designer in monochrome style" class="w-full h-full object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-700 ease-in-out" src="./src/Gemini_Generated_Image_emsgo5emsgo5emsg.png"/>
+<div class="absolute bottom-4 left-4 bg-white dark:bg-black px-3 py-1 text-xs font-bold uppercase tracking-wider">
+                        web developer &amp; designer
+                     </div>
+</div>
+</div>
+</section>
+<section class="mb-32 pl-0 md:pl-[25%] relative">
+<div class="absolute left-0 top-0 md:left-[15%] text-xs text-gray-400 dark:text-gray-600 font-japanese writing-mode-vertical">
+                A B O U T
+             </div>
+<h1 class="font-display text-5xl md:text-8xl uppercase tracking-tighter leading-[0.9] mb-8 text-primary dark:text-white">
+                Web<br/>
+                Developer<br/>
+<span class="ml-12 md:ml-24 block italic font-serif lowercase text-gray-500 dark:text-gray-400">&amp;  designer</span>
+</h1>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-16 max-w-4xl">
+<p class="text-sm md:text-base leading-relaxed text-gray-600 dark:text-gray-400">
+                    Information Technology engineer with a diploma background, focused on backend and full-stack web development. Strong in Java DSA, system design, and building scalable, real-world systems. Experienced web developer and designer with practical exposure to AI automation and Agile development practices.
+                </p>
+<div class="font-japanese text-xs text-gray-400 dark:text-gray-600 self-end">
+                    <a href="#"><i class="fa fa-github" aria-hidden="true"></i> Github</a> <br/> <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>  Twiter</a> <br/> <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i>  LinkedIn</a>
+                </div>
+</div>
+</section>
+<div class="w-full h-px bg-gray-300 dark:bg-gray-800 mb-20"></div>
+<section class="grid grid-cols-1 md:grid-cols-12 gap-8" id="projects">
+<div class="md:col-span-3">
+<div class="sticky top-12">
+<h2 class="text-xl font-bold font-display uppercase mb-4">Recent<br/>Projects</h2>
+
+</div>
+</div>
+<div class="md:col-span-9 flex flex-col gap-24">
+<article class="group relative grid grid-cols-1 md:grid-cols-2 gap-8 items-start cursor-pointer">
+<div class="order-2 md:order-1 pt-4">
+<div class="flex items-baseline justify-between border-b border-gray-300 dark:border-gray-700 pb-2 mb-4">
+<span class="font-mono text-xs text-gray-400">01</span>
+<span class="font-japanese text-xs text-gray-400">Deployed</span>
+</div>
+<h3 class="text-3xl font-display uppercase mb-4 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors">
+                            Jidnyasa Concept School Website
+                        </h3>
+<p class="text-sm text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
+                            An educational website with admission forms, gallery, and responsive design.
+                        </p>
+<ul class="text-xs font-mono space-y-1 text-gray-500">
+<li>+ UI/UX Design</li>
+<li>+ Frontend Dev</li>
+<li>+ Three.js</li>
+</ul>
+</div>
+<div class="order-1 md:order-2 overflow-hidden aspect-[4/3] bg-gray-100 dark:bg-gray-900">
+<img alt="Architectural building facade concrete" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfrjh6biAOhMiTuHuV77PfjNfQVx9ON_v9w-F7VzRfUu_WlSgbEecScrMiVjt6Q2a_XsVhm2XDGlY2MhysCDlhYEKf0XJfB4LnqSCnm3wC-Qw0v1nn62HVccRMMFBI3cHlJ8XHMYSgFRrOiUXoADD81X2cj7BLwkmai6C9dGdiZIr5bN-bbOq1ovU3xM3PxkXEsK2FM2ZtY9Qilq7H4paj_Oo4xg0WB0mtdmtZfBHH7eMdfTCzoEKAQuRtOLuzJ8dX6ibY6bFTnv8"/>
+</div>
+</article>
+<article class="group relative grid grid-cols-1 md:grid-cols-2 gap-8 items-start cursor-pointer">
+<div class="order-2 md:order-1 pt-4">
+<div class="flex items-baseline justify-between border-b border-gray-300 dark:border-gray-700 pb-2 mb-4">
+<span class="font-mono text-xs text-gray-400">02</span>
+<span class="font-japanese text-xs text-gray-400">Deployed</span>
+</div>
+<h3 class="text-3xl font-display uppercase mb-4 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors">
+                             SprayMate
+                        </h3>
+<p class="text-sm text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
+                           Smart agriculture spraying and farm management system with IoT integration.
+                        </p> 
+<ul class="text-xs font-mono space-y-1 text-gray-500">
+<li>+ Art Direction</li>
+<li>+ Shopify Custom</li>
+<li>+ Strategy</li>
+</ul>
+</div>
+<div class="order-1 md:order-2 overflow-hidden aspect-[4/3] bg-gray-100 dark:bg-gray-900">
+<img alt="Fashion model in dark minimalist clothing" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZQIC_BmCKgpKYtfOgg8PkolYVupX7_GN5ZaBvEd2kUWclAq4swT4Cf-KpSAvjAebTcEGGiaAsWXwhno-pD8yaBjMmMXekpaCxL53WmuNoK6Hm022KfbReHYHpIbCGAA7CR_7gknaqYJf7bpkwkSii8xjn-S_povq8zc2CJd82qnNXvlspUIWyhm3JF-Pe1vTXdU5cdtkXDOskQ9tI13hETC8jZ_tMV3YTPUwfnjMbvet8XfRrDGNOSPZe4Inkx3-lG6FTnj48iHg"/>
+</div>
+</article>
+<article class="group relative grid grid-cols-1 md:grid-cols-2 gap-8 items-start cursor-pointer">
+<div class="order-2 md:order-1 pt-4">
+<div class="flex items-baseline justify-between border-b border-gray-300 dark:border-gray-700 pb-2 mb-4">
+<span class="font-mono text-xs text-gray-400">03</span>
+<span class="font-japanese text-xs text-gray-400">Deployed</span>
+</div>
+<h3 class="text-3xl font-display uppercase mb-4 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors">
+                            Invoice Tools
+                        </h3>
+<p class="text-sm text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
+                            Lightweight invoicing and billing solution
+
+                        </p>
+<ul class="text-xs font-mono space-y-1 text-gray-500">
+<li>+ Interaction Design</li>
+<li>+ React</li>
+<li>+ Typography</li>
+</ul>
+</div>
+<div class="order-1 md:order-2 overflow-hidden aspect-[4/3] bg-gray-100 dark:bg-gray-900">
+<img alt="Typography posters on a wall" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvncaLA5P5_FswpLH59demVzL4VVEXtcW4ecJ34FhTUkbKBHGzOCEVLRB3DwPjzKC5FRuW2kQb-TOiy9KyQnPi_UuLNQbJ-e1DnwEXDsdaDzadHxENL21a5Ioq13BkggGUUGYDHtn6HoaNxfOLOZgYQqAr54vB42VS8u5NIkgJeGNfDaX5Dz6HhYzx4Eq3bWPNWGlNLYoaCodKdv2fXEe_1Ho4rv7mqUG0DxOyvvGwhfLxnbinNdK2e9TnyyVYaC4dano3mgcORWU"/>
+</div>
+</article>
+</div>
+</section>
+<footer class="mt-32 pt-12 border-t border-gray-300 dark:border-gray-800">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<div class="md:col-span-3 text-xs font-mono uppercase tracking-widest text-gray-500 dark:text-gray-400">
+                    Contact
+                </div> 
+<div class="md:col-span-6">
+<a class="text-2xl md:text-4xl font-display hover:underline decoration-1 underline-offset-4" href="mailto:sarthakmehare1111@gmail.com">
+                        sarthakmehare1111@gmail.com
+                    </a>
+<div class="flex gap-6 mt-8">
+<a class="text-sm border-b border-transparent hover:border-black dark:hover:border-white transition-colors" href="#">Instagram</a>
+<a class="text-sm border-b border-transparent hover:border-black dark:hover:border-white transition-colors" href="#">LinkedIn</a>
+<a class="text-sm border-b border-transparent hover:border-black dark:hover:border-white transition-colors" href="#">Behance</a>
+</div>
+</div>
+<div class="md:col-span-3 flex justify-end items-end">
+<p class="text-xs font-mono text-gray-400 dark:text-gray-600">
+                        © 2024 Design Portfolio<br/>
+                        All Rights Reserved.
+                     </p>
+</div>
+</div>
+<div class="w-full text-right mt-12 mb-4">
+<span class="text-[10px] font-bold tracking-widest text-gray-800 dark:text-gray-200 uppercase">2024 Y.</span>
+</div>
+</footer>
+</main>
+<script>
+        // Simple reveal animation on scroll could be added here
+        document.addEventListener('DOMContentLoaded', () => {
+            const articles = document.querySelectorAll('article');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-8');
+                    }
+                });
+            }, { threshold: 0.1 });
+            articles.forEach(article => {
+                article.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-8');
+                observer.observe(article);
+            });
+        });
+    </script>
+
+</body></html>
